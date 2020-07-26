@@ -14,6 +14,18 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: Header(),
         body: Center(child: Text("hello hello")),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              title: Text('Home'),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              title: Text("Home")
+            )
+          ],
+        ),
       ),
     );
   }
