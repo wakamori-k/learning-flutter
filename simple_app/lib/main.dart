@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_app/footer.dart';
 import 'package:simple_app/header.dart';
 
 void main() {
@@ -14,18 +15,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: Header(),
         body: Center(child: Text("hello hello")),
-        bottomNavigationBar: BottomNavigationBar(
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              title: Text('Home'),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              title: Text("Home")
-            )
-          ],
-        ),
+        bottomNavigationBar: Footer()
       ),
     );
   }
