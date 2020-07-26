@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/footer.dart';
+import 'package:simple_app/root.dart';
 import 'package:simple_app/header.dart';
 
 void main() {
@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: Header(),
-        body: Center(child: Text("hello hello")),
-        bottomNavigationBar: Footer()
+      theme: ThemeData(
+        primaryColor: Colors.blueGrey[900],
       ),
+      home: RootWidget()
     );
   }
 }
