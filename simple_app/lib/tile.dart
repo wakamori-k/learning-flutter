@@ -30,7 +30,7 @@ class Tile extends StatelessWidget {
           onTap: () => {
             Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Chat())
+                MaterialPageRoute(builder: (context) => Chat(username: this.username))
             )
           },
         )
